@@ -1,9 +1,10 @@
 #pragma once
 #include <map>
 #include <vector>
-class CFontElement;
 #include "SDL_ttf.h"
-class CFontManager
+#include "DllExport.h"
+class CFontElement;
+class WND_EXPORT CFontManager
 {
 public:
 	virtual ~CFontManager(void);

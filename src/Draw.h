@@ -1,7 +1,8 @@
 #pragma once
 #include "SDL_video.h"
 #include "SDL_stdinc.h"
-class CDraw
+#include "DllExport.h"
+class WND_EXPORT CDraw
 {
 public:
 	CDraw(void);
