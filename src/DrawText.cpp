@@ -32,7 +32,10 @@ void CDrawText::_ResetAttr( const std::string& strFont, int nFontSize )
 		SDL_FreeSurface( m_pSurface );
 		m_pSurface = NULL;
 	}
-	m_pSurface = TTF_RenderText_Solid( m_pFont, m_str.c_str(), m_cr );
+	if( m_pFont )
+	{
+		m_pSurface = TTF_RenderText_Solid( m_pFont, m_str.c_str(), m_cr );
+	}
 }
 
 void CDrawText::OnDraw()
