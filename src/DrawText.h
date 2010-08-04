@@ -1,7 +1,8 @@
 #pragma once
 #include "Draw.h"
 #include "SDL_ttf.h"
-class CDrawText :
+#include "DllExport.h"
+class WND_EXPORT CDrawText :
 	public CDraw
 {
 public:

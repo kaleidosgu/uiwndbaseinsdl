@@ -2,8 +2,9 @@
 #include "SDL_video.h"
 #include "SDL_stdinc.h"
 #include "Draw.h"
+#include "DllExport.h"
 
-class CDrawRect : public CDraw
+class WND_EXPORT CDrawRect : public CDraw
 {
 public:
 	CDrawRect(void);

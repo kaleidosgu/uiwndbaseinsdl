@@ -1,3 +1,4 @@
 #pragma once
 #include "SDL.h"
-extern SDL_Surface *g_pScreen;
+#include "DllExport.h"
+extern WND_EXPORT SDL_Surface *g_pScreen;

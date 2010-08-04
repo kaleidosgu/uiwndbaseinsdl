@@ -1,6 +1,7 @@
 #pragma once
 #include "SDL_ttf.h"
-class CFontElement
+#include "DllExport.h"
+class WND_EXPORT CFontElement
 {
 public:
 	CFontElement(void);
