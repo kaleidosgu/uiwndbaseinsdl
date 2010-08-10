@@ -17,6 +17,11 @@ void CDraw::OnDraw()
 {
 	if( m_bShow )
 	{
+		for( std::list < CDraw* >::iterator it = m_lstChild.begin(); it != m_lstChild.end(); ++it )
+		{
+			CDraw* pDraw = (*it);
+			pDraw->OnDraw();
+		}
 	}
 }
 void CDraw::SetRect( const SDL_Rect& rect )
@@ -50,4 +55,15 @@ void CDraw::Create( Sint16 x, Sint16 y, Sint16 w, Sint16 h )
 	m_rect.y = y;
 	m_rect.w = w;
 	m_rect.h = h;
+}
+void CDraw::OnUpdate()
+{
+	if( m_bShow )
+	{
+		for( std::list < CDraw* >::iterator it = m_lstChild.begin(); it != m_lstChild.end(); ++it )
+		{
+			CDraw* pDraw = (*it);
+			pDraw->OnUpdate();
+		}
+	}
 }
