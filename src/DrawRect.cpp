@@ -27,3 +27,9 @@ void CDrawRect::SetColor( const Uint8 r, const Uint8 g, const Uint8 b )
 	m_crG = g;
 	m_crB = b;
 }
+void CDrawRect::GetColor( Uint8& r, Uint8& g, Uint8& b )
+{
+	r = m_crR;
+	g = m_crG;
+	b = m_crB;
+}
